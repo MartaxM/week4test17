@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    each item, index in list
+        p= item.name
+        ul 
+            each val, index in item.instructions
+                li= val
+        ul 
+            each val, index in item.ingredients
+                li= val
